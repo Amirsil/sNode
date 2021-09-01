@@ -9,8 +9,8 @@ void CreateNode(node_t **ptr, const char *str)
 	}
 
 	*newptr = *ptr \
-				? (node_t){str, *ptr} \
-				: (node_t){str, NULL};
+			? (node_t){str, *ptr} \
+		        : (node_t){str, NULL};
 	
 	printf("Added \"%s\" (%p)\n", newptr -> str, newptr);
 	*ptr = newptr;
